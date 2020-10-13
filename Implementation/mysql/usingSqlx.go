@@ -25,9 +25,7 @@ func db_connect() *sqlx.DB{
 	if err != nil {
 		log.Fatal(err)
 	}
-	/*if err = db.Ping(); err != nil {
-		log.Fatal(err)
-	}*/
+
 	return db
 }
 
