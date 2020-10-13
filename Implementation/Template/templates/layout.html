@@ -1,0 +1,21 @@
+<html lang="">
+<style>
+    .done {
+background-color: #ff6347;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+</style>
+<h1>{{.PageTitle}}</h1>
+<ul>
+    {{range .Todos}}
+        {{if .Done}}
+            <li class="done">{{.Title}}</li>
+        {{else}}
+            <li>{{.Title}}</li>
+        {{end}}
+    {{end}}
+</ul>
+</html>
