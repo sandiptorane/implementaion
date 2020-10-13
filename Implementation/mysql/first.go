@@ -10,21 +10,7 @@ import (
 )
 
 
-/*func main() {
 
-	// Configure the database connection (always check errors)
-	db, err := sql.Open("mysql", "perennial:perennial@(127.0.0.1:3307)/perennial?parseTime=true")
-
-	// Initialize the first connection to the database, to see if everything works correctly.
-	// Make sure to check the error.
-	err = db.Ping()
-	if err!=nil {
-		fmt.Println("connection error =", err)
-	}else{
-		fmt.Println("connected successfully")
-	}
-}
-*/
 
 func main() {
 	db, err := sql.Open("mysql", "perennial:perennial@(127.0.0.1:3307)/perennial?parseTime=true")
